@@ -45,3 +45,13 @@ observation = numpy.array([
 
 kfilter.estimate(observation, acceleration, dt)
 
+observation = numpy.array([
+    [4860], # x
+    [286],  # x'
+    [0],    # y
+    [0]     # y'
+])
+
+kfilter.estimate(observation, acceleration, dt)
+
+
